@@ -1,0 +1,45 @@
+.favorite-list {
+  .favorite-title {
+    font-size: 12px;
+    padding: 20px;
+    margin: 0;
+  }
+  ul {
+    padding: 0;
+    min-height: 200px;
+    overflow: auto;
+    margin: 0;
+    li {
+      list-style: none;
+      height: 39px;
+      display: flex;
+      justify-content: flex-start;
+      transition: 0.3s;
+      padding-left: 20px;
+      padding: 10px 0 5px 20px;
+      cursor: pointer;
+      &:hover {
+        background-color: $light-grey;
+      }
+      i {
+        width: 30px;
+        height: 30px;
+        color: $yellow;
+        background-color: $light-yellow;
+        border-radius: 50%;
+        text-align: center;
+        margin-right: 15px;
+      }
+      div {
+        span:first-child {
+          font-size: 14px;
+          color: $dark-grey;
+        }
+        span:last-child {
+          font-size: 12px;
+          color: $grey;
+        }
+      }
+    }
+  }
+}

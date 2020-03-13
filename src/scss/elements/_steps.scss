@@ -1,0 +1,38 @@
+.container-next-step {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  width: 260px;
+  background: $white;
+  position: absolute;
+  bottom: 5%;
+  border-radius: 3px;
+  button {
+    text-align: center;
+    width: 50px;
+    background-color: $light-grey;
+  }
+}
+.step-indicator {
+  border-radius: 50%;
+  border: 1px solid $green;
+  text-align: center;
+  color: $green;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.favorite-places {
+  display: flex;
+  justify-content: space-around;
+  .step-indicator {
+    color: $grey;
+    border: 1px solid $grey;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      background-color: $light-grey;
+    }
+  }
+}

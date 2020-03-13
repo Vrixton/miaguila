@@ -1,8 +1,10 @@
 .container-sidebar {
+  background-color: $white;
   position: absolute;
   width: 230px;
   height: 100%;
   overflow: auto;
+  top: 0;
 }
 .logo {
   height: 60px;
@@ -34,5 +36,77 @@
   .user-position {
     font-size: 12px;
     color: $grey;
+  }
+}
+.container-map {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.container-tool {
+  width: 300px;
+  height: 90%;
+  margin-top: 3%;
+  background-color: $white;
+  margin-left: 250px;
+  .blue-section {
+    background-color: $blue;
+    height: 60px;
+    padding-top: 1px;
+    .container-client {
+      background-color: $white;
+      width: 260px;
+      height: 70px;
+      margin-left: 20px;
+      border-radius: 3px;
+      margin-top: 25px;
+      display: block;
+      padding-top: 10px;
+      .container-buttons {
+        display: flex;
+        justify-content: space-around;
+        button {
+          border: 1px solid $grey;
+          i {
+            vertical-align: sub;
+            color: $grey;
+          }
+        }
+        span {
+          font-size: 11px;
+          margin-top: 5px;
+          color: $grey;
+        }
+      }
+    }
+  }
+}
+
+.container-origin {
+  margin-top: 50px;
+  .favorite-origins {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    .selected-origin {
+      display: flex;
+    }
+  }
+}
+.container-input {
+  background-color: $light-green;
+  height: 70px;
+  input {
+    width: 90%;
+    height: 35px;
+    margin-left: 5%;
+    margin-top: 15px;
+    text-indent: 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $grey;
   }
 }

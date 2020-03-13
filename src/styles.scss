@@ -1,5 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-
+* {
+  &:focus {
+    outline: none;
+  }
+}
 html,
 body {
   height: 100%;
@@ -16,7 +20,10 @@ body {
 @import "scss/blocks/containers";
 
 // ELEMENTS
+@import "scss/elements/lists";
 @import "scss/elements/menu";
+@import "scss/elements/steps";
 
 // MODIFIERS
+@import "scss/modifiers/modifiers";
 @import "scss/modifiers/shadows";
