@@ -6,6 +6,7 @@
   overflow: auto;
   top: 0;
 }
+
 .logo {
   height: 60px;
   background-image: url("/assets/images/logo.png");
@@ -14,12 +15,14 @@
   background-repeat: no-repeat;
   margin-left: 5px;
 }
+
 .container-logo {
   width: 120px;
   height: 170px;
   text-align: center;
   border-bottom: 2px solid $light-grey;
   margin: 0 auto;
+
   .user-image {
     background-image: url("/assets/images/user.png");
     height: 100px;
@@ -28,16 +31,19 @@
     background-repeat: no-repeat;
     margin-bottom: 10px;
   }
+
   .username {
     font-size: 15px;
     color: $dark-grey;
     margin-bottom: 5px;
   }
+
   .user-position {
     font-size: 12px;
     color: $grey;
   }
 }
+
 .container-map {
   position: absolute;
   width: 100%;
@@ -46,16 +52,22 @@
   top: 0;
   left: 0;
 }
+
 .container-tool {
+  position: absolute;
   width: 300px;
-  height: 90%;
-  margin-top: 3%;
+  height: calc(100% - 40px);
+  top: 20px;
   background-color: $white;
   margin-left: 250px;
+  overflow: auto;
+  border-radius: 3px;
+
   .blue-section {
     background-color: $blue;
     height: 60px;
     padding-top: 1px;
+
     .container-client {
       background-color: $white;
       width: 260px;
@@ -65,16 +77,20 @@
       margin-top: 25px;
       display: block;
       padding-top: 10px;
+
       .container-buttons {
         display: flex;
         justify-content: space-around;
+
         button {
           border: 1px solid $grey;
+
           i {
             vertical-align: sub;
             color: $grey;
           }
         }
+
         span {
           font-size: 11px;
           margin-top: 5px;
@@ -87,18 +103,12 @@
 
 .container-origin {
   margin-top: 50px;
-  .favorite-origins {
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    .selected-origin {
-      display: flex;
-    }
-  }
 }
+
 .container-input {
   background-color: $light-green;
   height: 70px;
+
   input {
     width: 90%;
     height: 35px;
@@ -109,4 +119,9 @@
     border: none;
     border-bottom: 1px solid $grey;
   }
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
 }

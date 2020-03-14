@@ -10,7 +10,12 @@ const appRoutes: Routes = [
     data: { title: "Home" }
   },
   {
-    path: "pedir-aguila",
+    path: "pedir-aguila/origen",
+    component: NewAguilaComponent,
+    data: { title: "Pedir Aguila" }
+  },
+  {
+    path: "pedir-aguila/destino",
     component: NewAguilaComponent,
     data: { title: "Pedir Aguila" }
   }

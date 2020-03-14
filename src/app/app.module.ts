@@ -12,6 +12,9 @@ import { HomeComponent } from "./pages/home/home.component";
 import { NewAguilaComponent } from "./pages/new-aguila/new-aguila.component";
 import { TravelToolComponent } from "./components/travel-tool/travel-tool.component";
 import { FavoriteListComponent } from './components/favorite-list/favorite-list.component';
+import { InputMapComponent } from './components/input-map/input-map.component';
+import { QuickSelectFavoriteComponent } from './components/quick-select-favorite/quick-select-favorite.component';
+import { SelectServiceUserComponent } from './components/select-service-user/select-service-user.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { FavoriteListComponent } from './components/favorite-list/favorite-list.
     HomeComponent,
     NewAguilaComponent,
     TravelToolComponent,
-    FavoriteListComponent
+    FavoriteListComponent,
+    InputMapComponent,
+    QuickSelectFavoriteComponent,
+    SelectServiceUserComponent
   ],
   imports: [
     BrowserModule,

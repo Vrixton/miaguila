@@ -5,14 +5,15 @@
   width: 260px;
   background: $white;
   position: absolute;
-  bottom: 5%;
+  bottom: 0;
   border-radius: 3px;
+
   button {
     text-align: center;
-    width: 50px;
     background-color: $light-grey;
   }
 }
+
 .step-indicator {
   border-radius: 50%;
   border: 1px solid $green;
@@ -26,11 +27,13 @@
 .favorite-places {
   display: flex;
   justify-content: space-around;
+
   .step-indicator {
     color: $grey;
     border: 1px solid $grey;
     cursor: pointer;
     transition: 0.3s;
+
     &:hover {
       background-color: $light-grey;
     }
