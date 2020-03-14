@@ -1,0 +1,15 @@
+@for $i from 0 to 80 {
+    .p-#{$i} { padding: #{$i}px !important; }
+}
+@for $i from 0 to 80 {
+    .p-top-#{$i} { padding-top: #{$i}px !important; }
+}
+@for $i from 0 to 80 {
+    .p-left-#{$i} { padding-left: #{$i}px !important; }
+}
+@for $i from 0 to 80 {
+    .p-right-#{$i} { padding-right: #{$i}px !important; }
+}
+@for $i from 0 to 80 {
+    .p-bottom-#{$i} { padding-bottom: #{$i}px !important; }
+}
