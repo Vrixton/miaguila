@@ -1,4 +1,9 @@
-<div class="container-sidebar shadow-1">
+<button [ngClass]="{'buttonOpen': isOpenSidebar }" class="btn-sidebar" (click)="isOpenSidebar = !isOpenSidebar"
+    mat-icon-button>
+    <i *ngIf="!isOpenSidebar" class="material-icons">menu</i>
+    <i *ngIf="isOpenSidebar" class="material-icons">close</i>
+</button>
+<div [ngClass]="{'openSidebar': isOpenSidebar }" class="container-sidebar shadow-1">
     <div class="logo" routerLink="/"></div>
     <div class="container-logo">
         <div class="user">
