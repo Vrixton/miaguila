@@ -125,3 +125,49 @@
   display: flex;
   justify-content: space-around;
 }
+
+.container-routes {
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding: 10px 0 10px 20px;
+      list-style: none;
+      height: 50px;
+      font-size: 12px;
+      color: $dark-grey;
+      border-bottom: 1px solid $light-grey;
+      cursor: pointer;
+      transition: .3s;
+
+      &:hover {
+        background-color: $light-grey;
+      }
+
+      div i {
+        display: inline-flex;
+        vertical-align: bottom;
+      }
+
+      div.origin {
+        i {
+          color: $green;
+        }
+      }
+
+      div.destination {
+        i {
+          color: $blue;
+        }
+      }
+    }
+  }
+}
+
+.container-title {
+  background-color: $green;
+  padding: 20px;
+  font-size: 15px;
+  color: $white;
+}

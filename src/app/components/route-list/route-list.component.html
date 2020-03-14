@@ -1,0 +1,21 @@
+<div class="container-tool shadow-1">
+    <div class="blue-section">
+    </div>
+    <div class="container-title">
+        Rutas
+    </div>
+    <div class="container-routes">
+        <ul>
+            <li *ngFor="let route of routeList">
+                <div class="origin">
+                    <i class="material-icons">place</i>
+                    {{route.origin.title}}
+                </div>
+                <div class="destination">
+                    <i class="material-icons">emoji_flags</i>
+                    {{route.destination.title}}
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
