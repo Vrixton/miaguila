@@ -13,7 +13,6 @@ export class RouteListComponent implements OnInit {
 
   ngOnInit() {
     this.routes.get().subscribe(response => {
-      console.log(response);
       this.routeList = response.routes;
     });
   }
