@@ -1,5 +1,6 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
+import { HttpClientModule } from "@angular/common/http";
 import { AgmCoreModule } from "@agm/core";
 import { MatButtonModule } from "@angular/material/button";
 
@@ -11,10 +12,12 @@ import { MapComponent } from "./components/map/map.component";
 import { HomeComponent } from "./pages/home/home.component";
 import { NewAguilaComponent } from "./pages/new-aguila/new-aguila.component";
 import { TravelToolComponent } from "./components/travel-tool/travel-tool.component";
-import { FavoriteListComponent } from './components/favorite-list/favorite-list.component';
-import { InputMapComponent } from './components/input-map/input-map.component';
-import { QuickSelectFavoriteComponent } from './components/quick-select-favorite/quick-select-favorite.component';
-import { SelectServiceUserComponent } from './components/select-service-user/select-service-user.component';
+import { FavoriteListComponent } from "./components/favorite-list/favorite-list.component";
+import { InputMapComponent } from "./components/input-map/input-map.component";
+import { QuickSelectFavoriteComponent } from "./components/quick-select-favorite/quick-select-favorite.component";
+import { SelectServiceUserComponent } from "./components/select-service-user/select-service-user.component";
+import { RoutesComponent } from "./pages/routes/routes.component";
+import { RouteListComponent } from './components/route-list/route-list.component';
 
 @NgModule({
   declarations: [
@@ -27,10 +30,13 @@ import { SelectServiceUserComponent } from './components/select-service-user/sel
     FavoriteListComponent,
     InputMapComponent,
     QuickSelectFavoriteComponent,
-    SelectServiceUserComponent
+    SelectServiceUserComponent,
+    RoutesComponent,
+    RouteListComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,

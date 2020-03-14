@@ -1,30 +1,36 @@
 [
   {
+    "id": 1,
     "title": "Centro Comercial Gran Estación",
     "latitud": 4.6476286,
     "longitud": -74.1038169
   },
   {
+    "id": 2,
     "title": "Parque Central Simón Bolívar",
     "latitud": 4.6584849,
     "longitud": -74.0956466
   },
   {
+    "id": 3,
     "title": "Monserrate",
     "latitud": 4.6056941,
     "longitud": -74.0642803
   },
   {
+    "id": 4,
     "title": "Museo del Oro",
     "latitud": 4.6032332,
     "longitud": -74.0774178
   },
   {
+    "id": 5,
     "title": "Torre Colpatria",
     "latitud": 4.6108985,
     "longitud": -74.0723422
   },
   {
+    "id": 6,
     "title": "Mi Águila",
     "latitud": 4.6673163,
     "longitud": -74.0587037

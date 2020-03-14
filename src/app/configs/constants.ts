@@ -8,37 +8,32 @@ export class Constants {
     {
       icon: "flight",
       title: "Vuelos",
-      route: ""
+      route: "/vuelos"
     },
     {
       icon: "timeline",
       title: "Rutas",
-      route: ""
-    },
-    {
-      icon: "timeline",
-      title: "Rutas",
-      route: ""
+      route: "/rutas"
     },
     {
       icon: "chrome_reader_mode",
       title: "Administrar",
-      route: ""
+      route: "/administrar"
     },
     {
       icon: "trending_up",
       title: "Estadisticas",
-      route: ""
+      route: "/estadisticas"
     },
     {
       icon: "credit_card",
       title: "Medios de Pago",
-      route: ""
+      route: "/metodos-de-pagos"
     },
     {
       icon: "power_settings_new",
       title: "Cerrar sesión",
-      route: ""
+      route: "/logout"
     }
   ];
 }

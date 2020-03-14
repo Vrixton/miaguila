@@ -2,6 +2,7 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { HomeComponent } from "../pages/home/home.component";
 import { NewAguilaComponent } from "../pages/new-aguila/new-aguila.component";
+import { RoutesComponent } from "../pages/routes/routes.component";
 
 const appRoutes: Routes = [
   {
@@ -18,6 +19,11 @@ const appRoutes: Routes = [
     path: "pedir-aguila/destino",
     component: NewAguilaComponent,
     data: { title: "Pedir Aguila" }
+  },
+  {
+    path: "rutas",
+    component: RoutesComponent,
+    data: { title: "Routes" }
   }
 ];
 

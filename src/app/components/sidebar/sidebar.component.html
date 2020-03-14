@@ -9,14 +9,9 @@
 
     </div>
     <ul class="menu-options">
-        <li routerLinkActive="active" routerLink="/pedir-aguila/origen"><i
-                class="material-icons">directions_car</i>Pedir
-            Aguila</li>
-        <li><i class="material-icons">flight</i>Vuelos</li>
-        <li><i class="material-icons">timeline</i>Rutas</li>
-        <li><i class="material-icons">chrome_reader_mode</i>Administrar</li>
-        <li><i class="material-icons">trending_up</i>Estadisticas</li>
-        <li><i class="material-icons">credit_card</i>Medios de Pago</li>
-        <li><i class="material-icons">power_settings_new</i>Cerrar sesión</li>
+        <li *ngFor="let option of options" routerLinkActive="active" [routerLink]="option.route">
+            <i class="material-icons">{{ option.icon }}</i>
+            <span>{{option.title}}</span>
+        </li>
     </ul>
 </div>
