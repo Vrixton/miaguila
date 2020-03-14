@@ -11,6 +11,7 @@ import { MapComponent } from "./components/map/map.component";
 import { HomeComponent } from "./pages/home/home.component";
 import { NewAguilaComponent } from "./pages/new-aguila/new-aguila.component";
 import { TravelToolComponent } from "./components/travel-tool/travel-tool.component";
+import { FavoriteListComponent } from './components/favorite-list/favorite-list.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { TravelToolComponent } from "./components/travel-tool/travel-tool.compon
     MapComponent,
     HomeComponent,
     NewAguilaComponent,
-    TravelToolComponent
+    TravelToolComponent,
+    FavoriteListComponent
   ],
   imports: [
     BrowserModule,
