@@ -35,11 +35,7 @@
   .step-indicator {
     color: $grey;
     border: 1px solid $grey;
-    cursor: pointer;
     transition: 0.3s;
-
-    &:hover {
-      background-color: $light-grey;
-    }
+    background-color: $light-grey;
   }
 }
