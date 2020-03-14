@@ -4,10 +4,12 @@
     outline: none;
   }
 }
+
 html,
 body {
   height: 100%;
 }
+
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
@@ -20,6 +22,7 @@ body {
 @import "scss/blocks/containers";
 
 // ELEMENTS
+@import "scss/elements/buttons";
 @import "scss/elements/lists";
 @import "scss/elements/menu";
 @import "scss/elements/steps";

@@ -1,0 +1,16 @@
+button.btn-sidebar {
+    position: absolute;
+    z-index: 3;
+    left: 20px;
+    top: 9px;
+    display: none;
+    transition: .3s;
+
+    @media (max-width: 800px) {
+        display: block;
+    }
+}
+
+.buttonOpen {
+    left: 180px !important;
+}
