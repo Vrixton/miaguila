@@ -18,18 +18,17 @@ export class TravelToolComponent implements OnInit {
     this.activatedRoute.queryParams.subscribe(data => {
       if (data.lat1 && data.lng1) {
         this.originCoords = {
-          latitud: data.lat1,
-          longitud: data.lng1
+          latitud: parseFloat(data.lat1),
+          longitud: parseFloat(data.lng1)
         };
         this.initial = true;
         this.coords = undefined;
-        console.log(this.coords);
         this.step = 2;
       }
       if (data.lat2 && data.lng2) {
         this.destinationCoords = {
-          latitud: data.lat2,
-          longitud: data.lng2
+          latitud: parseFloat(data.lat2),
+          longitud: parseFloat(data.lng2)
         };
         this.step = 3;
       }
