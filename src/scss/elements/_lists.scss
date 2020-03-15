@@ -1,6 +1,6 @@
 .favorite-list {
   .favorite-title {
-    font-size: 12px;
+    font-size: $small;
     padding: 20px;
     margin: 0;
   }
@@ -39,12 +39,12 @@
 
       div {
         span:first-child {
-          font-size: 14px;
+          font-size: $medium;
           color: $dark-grey;
         }
 
         span:last-child {
-          font-size: 12px;
+          font-size: $small;
           color: $grey;
         }
       }

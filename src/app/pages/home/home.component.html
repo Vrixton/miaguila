@@ -1,1 +1,1 @@
-<app-map [originCoords]="route.origin" [destinationCoords]="route.destination"></app-map>
+<app-map *ngIf="route" [originCoords]="route.origin" [destinationCoords]="route.destination"></app-map>

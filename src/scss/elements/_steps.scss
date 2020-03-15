@@ -8,13 +8,14 @@
   border-radius: 3px;
   width: 260px;
 
-  @media(max-width: 800px) {
+  @media (max-width: 800px) {
     width: calc(100% - 80px);
   }
 
   button {
     text-align: center;
-    background-color: $light-grey;
+    background-color: $white;
+    color: $dark-green !important;
   }
 }
 

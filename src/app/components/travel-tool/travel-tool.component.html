@@ -5,17 +5,18 @@
     <div class="container-origin">
         <app-quick-select-favorite [point]="step" [selected]="none"></app-quick-select-favorite>
         <app-favorite-list [point]="step" [initial]="initial" (coords)="setCoords($event)"></app-favorite-list>
-        <div *ngIf="coords && step === 1" class="container-next-step shadow">
-            <button [disabled]="!coords" mat-button color="accent" routerLink="/pedir-aguila"
+        <div *ngIf="coords && step === 1" class="container-next-step shadow-1">
+            <button class="shadow-1" [disabled]="!coords" mat-button color="accent" routerLink="/pedir-aguila"
                 [queryParams]="{lat1: coords.latitud, lng1: coords.longitud}">
                 <i class="material-icons">keyboard_arrow_rights</i>
             </button>
         </div>
-        <div *ngIf="step === 2 && originCoords" class="container-next-step container shadow">
-            <button mat-button color="accent" (click)="resetTool()">
+        <div *ngIf="step === 2 && originCoords" class="container-next-step container shadow-1">
+            <button mat-button color="accent" class="shadow-1" (click)="resetTool()">
                 Volver a origen
             </button>
-            <button *ngIf="step === 2 && originCoords && coords" mat-button color="accent" routerLink="/pedir-aguila"
+            <button *ngIf="step === 2 && originCoords && coords" class="shadow-1" mat-button color="accent"
+                routerLink="/pedir-aguila"
                 [queryParams]="{lat1: originCoords.latitud, lng1: originCoords.longitud, lat2: coords.latitud, lng2: coords.longitud}">
                 Finalizar
             </button>
@@ -23,10 +24,10 @@
     </div>
 </div>
 <div class="container container-reset-buttons">
-    <button class="btn-back" *ngIf="step === 3" mat-button color="primary" (click)="resetTool()">
+    <button class="btn-back shadow-1" *ngIf="step === 3" mat-button color="primary" (click)="resetTool()">
         Reiniciar
     </button>
-    <button class=" btn-back" *ngIf="step === 3" mat-button color="primary" (click)="step = 2">
+    <button class=" btn-back shadow-1" *ngIf="step === 3" mat-button color="primary" (click)="step = 2">
         Editar destino
     </button>
 </div>

@@ -8,8 +8,8 @@ import { Component, OnInit, Input } from "@angular/core";
 export class MapComponent implements OnInit {
   @Input() originCoords: any;
   @Input() destinationCoords: any;
-  lat = 4.6486259;
-  lng = -74.2478952;
+  lat = 4.6373334;
+  lng = -74.1593165;
   zoom = 12;
 
   constructor() {}
