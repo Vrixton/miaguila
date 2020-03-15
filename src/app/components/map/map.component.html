@@ -1,6 +1,16 @@
 <agm-map class="container-map" [latitude]="lat" [longitude]="lng" [zoom]="zoom">
     <agm-marker *ngIf="originCoords" [label]="'1'" [markerDraggable]="true" [latitude]="originCoords.latitud"
         [longitude]="originCoords.longitud"></agm-marker>
+
+    <agm-polyline *ngIf="destinationCoords" [strokeColor]="black">
+        <agm-polyline-point [latitude]="originCoords.latitud" [longitude]="originCoords.longitud">
+        </agm-polyline-point>
+        <ng-container>
+            <agm-polyline-point [latitude]="destinationCoords.latitud" [longitude]="destinationCoords.longitud">
+            </agm-polyline-point>
+        </ng-container>
+    </agm-polyline>
+
     <agm-marker *ngIf="destinationCoords" [label]="'2'" [markerDraggable]="true" [latitude]="destinationCoords.latitud"
         [longitude]="destinationCoords.longitud">
     </agm-marker>

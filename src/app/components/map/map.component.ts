@@ -10,11 +10,16 @@ export class MapComponent implements OnInit {
   @Input() destinationCoords: any;
   lat = 4.6486259;
   lng = -74.2478952;
-  locationChoosen1 = false;
-  locationChoosen2 = false;
   zoom = 12;
 
-  constructor() {}
+  constructor() {
+    console.log(this.originCoords);
+    console.log(this.destinationCoords);
+  }
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log("print");
+    console.log(this.originCoords);
+    console.log(this.destinationCoords);
+  }
 }
