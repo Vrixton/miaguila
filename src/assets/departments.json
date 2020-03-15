@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Cundinamarca"
+  },
+  {
+    "id": 2,
+    "title": "Antioquia"
+  },
+  {
+    "id": 3,
+    "title": "Amazonas"
+  },
+  {
+    "id": 4,
+    "title": "Arauca"
+  },
+  {
+    "id": 5,
+    "title": "Atlántico"
+  },
+  {
+    "id": 6,
+    "title": "Bolívar"
+  },
+  {
+    "id": 9,
+    "title": "Boyacá"
+  },
+  {
+    "id": 10,
+    "title": "Caldas"
+  }
+]
