@@ -1,12 +1,24 @@
-<div class="container-tool shadow-1">
+<div *ngIf="isShowRoutes" class="container-tool shadow-1">
     <div class="blue-section">
     </div>
     <div class="container-title">
         Rutas
     </div>
     <div class="container-routes">
-        <ul>
-            <li *ngFor="let route of routeList">
+        <ul class="hide-mobile">
+            <li *ngFor="let route of routeList" (click)="setCoords(route)">
+                <div class="origin">
+                    <i class="material-icons">place</i>
+                    {{route.origin.title}}
+                </div>
+                <div class="destination">
+                    <i class="material-icons">emoji_flags</i>
+                    {{route.destination.title}}
+                </div>
+            </li>
+        </ul>
+        <ul class="hide-desktop">
+            <li *ngFor="let route of routeList" (click)="setCoords(route); isShowRoutes =! isShowRoutes">
                 <div class="origin">
                     <i class="material-icons">place</i>
                     {{route.origin.title}}
@@ -18,4 +30,9 @@
             </li>
         </ul>
     </div>
+</div>
+<div *ngIf="!isShowRoutes" class=" hide-desktop container container-reset-buttons flex">
+    <button class="btn-back" mat-button color="primary" (click)="isShowRoutes =! isShowRoutes">
+        Ver rutas
+    </button>
 </div>

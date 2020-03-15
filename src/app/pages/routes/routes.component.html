@@ -1,2 +1,2 @@
-<app-route-list></app-route-list>
-<app-map></app-map>
+<app-route-list (coords)="setCoords($event)"></app-route-list>
+<app-map [originCoords]="origin" [destinationCoords]="destination"></app-map>
