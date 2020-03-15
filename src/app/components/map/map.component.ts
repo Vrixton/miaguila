@@ -12,14 +12,7 @@ export class MapComponent implements OnInit {
   lng = -74.2478952;
   zoom = 12;
 
-  constructor() {
-    console.log(this.originCoords);
-    console.log(this.destinationCoords);
-  }
+  constructor() {}
 
-  ngOnInit() {
-    console.log("print");
-    console.log(this.originCoords);
-    console.log(this.destinationCoords);
-  }
+  ngOnInit() {}
 }
