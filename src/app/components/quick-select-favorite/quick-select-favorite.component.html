@@ -1,16 +1,16 @@
-<div class="container p-20">
-    <div *ngIf="point===2" class="favorite-places">
+<div class="container p-left-20 p-10">
+    <div *ngIf="point === 2" class="favorite-places">
         <div class="step-indicator">1</div>
     </div>
-    <div *ngIf="point===1" class="container">
+    <div *ngIf="point === 1" class="container">
         <div class="step-indicator">1</div>
         <span>Origen</span>
     </div>
-    <div *ngIf="point===2" class="container">
+    <div *ngIf="point === 2" class="container">
         <div class="step-indicator">2</div>
-        <span *ngIf="point===2">Destino</span>
+        <span *ngIf="point === 2">Destino</span>
     </div>
-    <div *ngIf="point===1" class="favorite-places">
+    <div *ngIf="point === 1" class="favorite-places">
         <div class="step-indicator">2</div>
     </div>
 </div>

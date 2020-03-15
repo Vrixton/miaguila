@@ -6,10 +6,12 @@
   }
 
   ul {
+    max-height: 250px;
     padding: 0;
     min-height: 200px;
     overflow: auto;
     margin: 0;
+    margin-bottom: 80px;
 
     li {
       list-style: none;

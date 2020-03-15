@@ -2,14 +2,14 @@
   display: flex;
   justify-content: flex-end;
   padding: 20px;
-  width: 260px;
   background: $white;
-  position: absolute;
-  bottom: 0;
+  position: fixed;
+  bottom: 20px;
   border-radius: 3px;
+  width: 260px;
 
-  @media (max-width: 800px) {
-    width: calc(100% - 40px);
+  @media(max-width: 800px) {
+    width: calc(100% - 80px);
   }
 
   button {

@@ -17,3 +17,20 @@
 .openSidebar {
   margin-left: 0;
 }
+
+label.mat-form-field-label.ng-tns-c10-0.mat-empty.mat-form-field-empty.ng-star-inserted {
+  opacity: 1;
+  transition: .3s;
+}
+
+label.mat-form-field-label.ng-tns-c10-0.ng-star-inserted {
+  opacity: 0;
+}
+
+.mat-select-panel {
+  background-color: $white;
+
+  * {
+    color: $green;
+  }
+}

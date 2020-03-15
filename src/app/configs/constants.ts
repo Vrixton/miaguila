@@ -3,7 +3,7 @@ export class Constants {
     {
       icon: "directions_car",
       title: "Pedir Aguila",
-      route: "/pedir-aguila/origen"
+      route: "/pedir-aguila"
     },
     {
       icon: "flight",
