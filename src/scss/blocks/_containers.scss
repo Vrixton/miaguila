@@ -39,13 +39,13 @@
   }
 
   .username {
-    font-size: 15px;
+    font-size: $medium;
     color: $dark-grey;
     margin-bottom: 5px;
   }
 
   .user-position {
-    font-size: 12px;
+    font-size: $small;
     color: $grey;
   }
 }
@@ -110,7 +110,7 @@
         }
 
         span {
-          font-size: 11px;
+          font-size: $small;
           margin-top: 5px;
           color: $grey;
         }
@@ -120,11 +120,11 @@
           background-color: $light-green;
           border: 1px solid $light-green;
           i {
-            color: $green;
+            color: $dark-green;
           }
         }
         span {
-          color: $green;
+          color: $dark-green;
         }
       }
     }
@@ -153,7 +153,7 @@
     background-color: transparent;
     border: none;
     border-bottom: 1px solid $grey;
-    font-size: 15px;
+    font-size: $medium;
     color: $dark-grey;
   }
 }
@@ -167,7 +167,7 @@
       padding: 10px 0 10px 20px;
       list-style: none;
       height: 50px;
-      font-size: 12px;
+      font-size: $small;
       color: $dark-grey;
       border-bottom: 1px solid $light-grey;
       cursor: pointer;
@@ -200,7 +200,7 @@
 .container-title {
   background-color: $green;
   padding: 20px;
-  font-size: 15px;
+  font-size: $medium;
   color: $white;
 }
 
@@ -228,6 +228,9 @@
     width: 100%;
     bottom: 20px;
     top: auto;
+  }
+  button {
+    color: $dark-green !important;
   }
 }
 
