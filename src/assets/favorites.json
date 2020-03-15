@@ -3,36 +3,48 @@
     "id": 1,
     "title": "Centro Comercial Gran Estación",
     "latitud": 4.6476286,
-    "longitud": -74.1038169
+    "longitud": -74.1038169,
+    "address": "Av. Calle 26 #62-47, Bogotá",
+    "departmentId": 1
   },
   {
     "id": 2,
     "title": "Parque Central Simón Bolívar",
     "latitud": 4.6584849,
-    "longitud": -74.0956466
+    "longitud": -74.0956466,
+    "address": "Av. Calle 53 y Av. Esmeralda #s/n, Bogotá, Cundinamarca",
+    "departmentId": 1
   },
   {
     "id": 3,
     "title": "Monserrate",
     "latitud": 4.6056941,
-    "longitud": -74.0642803
+    "longitud": -74.0642803,
+    "address": "Carrera 2 Este No. 21-48 Paseo Bolívar",
+    "departmentId": 1
   },
   {
     "id": 4,
     "title": "Museo del Oro",
     "latitud": 4.6032332,
-    "longitud": -74.0774178
+    "longitud": -74.0774178,
+    "address": "Cra. 6 ##15-88, Bogotá, Cundinamarca",
+    "departmentId": 1
   },
   {
     "id": 5,
     "title": "Torre Colpatria",
     "latitud": 4.6108985,
-    "longitud": -74.0723422
+    "longitud": -74.0723422,
+    "address": "Cra. 7 #89, Bogotá",
+    "departmentId": 1
   },
   {
     "id": 6,
     "title": "Mi Águila",
     "latitud": 4.6673163,
-    "longitud": -74.0587037
+    "longitud": -74.0587037,
+    "address": "Ak. 15 #8090, Bogotá, Cundinamarca",
+    "departmentId": 1
   }
 ]

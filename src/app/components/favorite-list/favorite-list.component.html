@@ -1,33 +1,28 @@
+<mat-form-field class="container-select">
+    <mat-label>Departament</mat-label>
+    <mat-select [(ngModel)]="departmentId">
+        <mat-option [value]="1">
+            Cundinamarca
+        </mat-option>
+        <mat-option [value]="2">
+            Antioquia
+        </mat-option>
+    </mat-select>
+</mat-form-field>
+<div class="container-input">
+    <div>{{ message }}</div>
+</div>
 <div class="favorite-list">
     <p class="favorite-title">Favoritos</p>
     <ul>
-        <li>
-            <i class="material-icons">star_border</i>
-            <div class="grid">
-                <span class="title">address title</span>
-                <span class="address">complete address</span>
-            </div>
-        </li>
-        <li>
-            <i class="material-icons">star_border</i>
-            <div class="grid">
-                <span class="title">address title</span>
-                <span class="address">complete address</span>
-            </div>
-        </li>
-        <li>
-            <i class="material-icons">star_border</i>
-            <div class="grid">
-                <span class="title">address title</span>
-                <span class="address">complete address</span>
-            </div>
-        </li>
-        <li>
-            <i class="material-icons">star_border</i>
-            <div class="grid">
-                <span class="title">address title</span>
-                <span class="address">complete address</span>
-            </div>
-        </li>
+        <span *ngFor="let favorite of favoriteList">
+            <li *ngIf="departmentId === favorite.departmentId" (click)="setCoords(favorite)">
+                <i class="material-icons">star_border</i>
+                <div class="grid">
+                    <span class="title">{{ favorite.title }}</span>
+                    <span class="address">{{ favorite.address }}</span>
+                </div>
+            </li>
+        </span>
     </ul>
 </div>

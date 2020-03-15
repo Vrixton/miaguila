@@ -5,7 +5,7 @@
   height: 100%;
   overflow: auto;
   top: 0;
-  transition: .3s;
+  transition: 0.3s;
   z-index: 2;
 
   @media (max-width: 800px) {
@@ -125,22 +125,24 @@
 .container-input {
   background-color: $light-green;
   height: 70px;
+  background-image: url("assets/images/pin.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 40px;
 
-  input {
-    width: 90%;
-    height: 35px;
-    margin-left: 5%;
-    margin-top: 15px;
+  div {
+    width: calc(100% - 60px);
+    height: 25px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 25px;
     text-indent: 5px;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid $grey;
+    font-size: 15px;
+    color: $dark-grey;
   }
-}
-
-.container {
-  display: flex;
-  justify-content: space-around;
 }
 
 .container-routes {
@@ -156,7 +158,7 @@
       color: $dark-grey;
       border-bottom: 1px solid $light-grey;
       cursor: pointer;
-      transition: .3s;
+      transition: 0.3s;
 
       &:hover {
         background-color: $light-grey;
@@ -187,4 +189,36 @@
   padding: 20px;
   font-size: 15px;
   color: $white;
+}
+
+.container-select {
+  width: calc(100% - 40px);
+  padding: 0 20px 5px 20px;
+  border-top: 1px solid $light-grey;
+
+  .mat-form-field-wrapper {
+    margin-bottom: -20px;
+    margin-top: -10px;
+  }
+
+  * {
+    color: $dark-grey;
+  }
+}
+.container-reset-buttons {
+  position: absolute;
+  width: 300px;
+  top: 20px;
+  margin-left: 250px;
+  @media (max-width: 800px) {
+    margin-left: 0;
+    width: 100%;
+    bottom: 20px;
+    top: auto;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-around !important;
 }

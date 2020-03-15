@@ -11,12 +11,12 @@ const appRoutes: Routes = [
     data: { title: "Home" }
   },
   {
-    path: "pedir-aguila/origen",
+    path: "pedir-aguila",
     component: NewAguilaComponent,
     data: { title: "Pedir Aguila" }
   },
   {
-    path: "pedir-aguila/destino",
+    path: "pedir-aguila",
     component: NewAguilaComponent,
     data: { title: "Pedir Aguila" }
   },

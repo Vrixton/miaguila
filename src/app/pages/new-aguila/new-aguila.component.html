@@ -1,2 +1,2 @@
-<app-travel-tool></app-travel-tool>
-<app-map></app-map>
+<app-travel-tool (origin)="setOrigin($event)" (destination)="setDestination($event)"></app-travel-tool>
+<app-map [originCoords]="originCoords" [destinationCoords]="destinationCoords"></app-map>

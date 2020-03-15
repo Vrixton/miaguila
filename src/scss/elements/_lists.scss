@@ -4,11 +4,15 @@
     padding: 20px;
     margin: 0;
   }
+
   ul {
+    max-height: 250px;
     padding: 0;
     min-height: 200px;
     overflow: auto;
     margin: 0;
+    margin-bottom: 80px;
+
     li {
       list-style: none;
       height: 39px;
@@ -18,23 +22,27 @@
       padding-left: 20px;
       padding: 10px 0 5px 20px;
       cursor: pointer;
+
       &:hover {
         background-color: $light-grey;
       }
+
       i {
-        width: 30px;
-        height: 30px;
+        width: 26px;
+        height: 26px;
         color: $yellow;
         background-color: $light-yellow;
         border-radius: 50%;
         text-align: center;
         margin-right: 15px;
       }
+
       div {
         span:first-child {
           font-size: 14px;
           color: $dark-grey;
         }
+
         span:last-child {
           font-size: 12px;
           color: $grey;
