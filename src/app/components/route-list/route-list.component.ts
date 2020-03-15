@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Output, EventEmitter } from "@angular/core";
 import { RoutesService } from "../../services/routes/routes.service";
 
 @Component({
@@ -8,12 +8,17 @@ import { RoutesService } from "../../services/routes/routes.service";
 })
 export class RouteListComponent implements OnInit {
   routeList: any;
-
+  isShowRoutes: boolean = true;
+  @Output() coords = new EventEmitter<string>();
   constructor(private routes: RoutesService) {}
 
   ngOnInit() {
     this.routes.get().subscribe(response => {
       this.routeList = response.routes;
     });
+  }
+
+  setCoords(routes) {
+    this.coords.emit(routes);
   }
 }

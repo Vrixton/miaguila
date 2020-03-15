@@ -6,7 +6,13 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./routes.component.scss"]
 })
 export class RoutesComponent implements OnInit {
+  origin: any;
+  destination: any;
   constructor() {}
 
   ngOnInit() {}
+  setCoords(e) {
+    this.origin = e.origin;
+    this.destination = e.destination;
+  }
 }

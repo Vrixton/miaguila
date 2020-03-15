@@ -1,7 +1,9 @@
 .block {
   display: block;
 }
-
+.flex {
+  display: flex !important;
+}
 .grid {
   display: grid;
 }
@@ -20,7 +22,7 @@
 
 label.mat-form-field-label.ng-tns-c10-0.mat-empty.mat-form-field-empty.ng-star-inserted {
   opacity: 1;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 label.mat-form-field-label.ng-tns-c10-0.ng-star-inserted {
@@ -32,5 +34,18 @@ label.mat-form-field-label.ng-tns-c10-0.ng-star-inserted {
 
   * {
     color: $green;
+  }
+}
+.hide-desktop {
+  display: none;
+  @media (max-width: 800px) {
+    display: block;
+  }
+}
+
+.hide-mobile {
+  display: block;
+  @media (max-width: 800px) {
+    display: none;
   }
 }
