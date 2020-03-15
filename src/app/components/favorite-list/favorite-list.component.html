@@ -1,11 +1,8 @@
 <mat-form-field class="container-select">
     <mat-label>Departament</mat-label>
     <mat-select [(ngModel)]="departmentId">
-        <mat-option [value]="1">
-            Cundinamarca
-        </mat-option>
-        <mat-option [value]="2">
-            Antioquia
+        <mat-option *ngFor="let department of departmentList" [value]="department.id">
+            {{ department.title }}
         </mat-option>
     </mat-select>
 </mat-form-field>
