@@ -1,18 +1,18 @@
 <div class="container-client shadow-1">
     <div class="container-buttons">
-        <div class="grid">
+        <div class="grid" [ngClass]="{'active': client === 1}" (click)="setClient(1)">
             <button mat-icon-button color="accent">
                 <i class="material-icons">person</i>
             </button>
             <span>Para mí</span>
         </div>
-        <div class="grid">
+        <div class="grid" [ngClass]="{'active': client === 2}" (click)="setClient(2)">
             <button mat-icon-button color="accent">
                 <i class="material-icons">people_alt</i>
             </button>
             <span>Colega</span>
         </div>
-        <div class="grid">
+        <div class="grid" [ngClass]="{'active': client === 3}" (click)="setClient(3)">
             <button mat-icon-button color="accent">
                 <i class="material-icons">person_add</i>
             </button>
