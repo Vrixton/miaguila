@@ -9,6 +9,8 @@ Separe las funcionalidades por componentes y a su vez, los comunique entre ellos
 Los modulos funcionales dentro de la prueba son `Home`, `Pedir aguila` y `Rutas`
 Para Pedir un servicio primero se debe seleccionar el departamento (Hay que tener en cuenta que en las rutas guardadas como favoritos solo hay lugares de Cundinamarca, por ende, en los demas departamentos no habran favoritos guardados), luego seleccionar una opcion de la lista de favoritos, y presionar siguiente; Asi mismo con la opcion de destino, teniendo que presionar alguna opcion para que aparezca el boton de `Finalizar`, se oculte el contenedor de escoger la ruta y muestre el mapa completo con la ruta seleccionada.
 
+Las lineas que marcan el viaje solo pude hacer una linea entre ellas, porque el Api de Directions de Google Maps no me permitia activarlo para propositos de desarrollo
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
